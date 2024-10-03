@@ -1,5 +1,5 @@
 {% set name = "ragas" %}
-{% set version = "0.1.20" %}
+{% set version = "0.1.21" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: 01a8bcf379d3462281cea809e01c7f2f0f1b4aebd0d9f3c5166c44877885cdfb
+  sha256: 4ded52375d3710a2a2dd23d550fd09d0e26485fc435b14a413174f9d7b45d252
 
 build:
   noarch: python
@@ -25,9 +25,9 @@ requirements:
     - numpy
     - datasets
     - tiktoken
-    - langchain
+    - langchain <0.3
     - langchain-core <0.3
-    - langchain-community
+    - langchain-community <0.3
     - langchain-openai
     - openai >1
     - pysbd >=0.3.4

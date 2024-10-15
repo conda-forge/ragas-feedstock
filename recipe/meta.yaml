@@ -34,6 +34,7 @@ requirements:
     - pysbd >=0.3.4
     - nest-asyncio
     - appdirs
+    - nltk
 
 test:
   imports:

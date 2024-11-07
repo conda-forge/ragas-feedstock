@@ -1,5 +1,5 @@
 {% set name = "ragas" %}
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: d6c2a26e2832c01dc128e8906b76c2c1956ddc5949bfaf89de5d1ed99c92964f
+  sha256: b4edfeac5942bc4e19580a91e04d51f6037f863905ff49fb2c9daad40cfbb476
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - nest-asyncio
     - appdirs
     - nltk
+    - llama-index
 
 test:
   imports:

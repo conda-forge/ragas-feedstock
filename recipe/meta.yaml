@@ -35,6 +35,7 @@ requirements:
     - nest-asyncio
     - appdirs
     - nltk
+    - llama-index
 
 test:
   imports:

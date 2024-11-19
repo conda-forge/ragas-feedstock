@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
   sha256: 877e723e4bbf29eab8e1b12f7bf6f63bb2145d63ea4c3ce21620b14f9dbfb421
 
 build:

@@ -1,13 +1,13 @@
 {% set name = "ragas" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: 7c9e151e20bbdd7c780230d4af940155afab16250c7705a92ec7c7ef52a6aa76
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
+  sha256: 877e723e4bbf29eab8e1b12f7bf6f63bb2145d63ea4c3ce21620b14f9dbfb421
 
 build:
   noarch: python

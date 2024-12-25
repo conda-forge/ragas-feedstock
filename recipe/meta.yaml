@@ -1,5 +1,5 @@
 {% set name = "ragas" %}
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: 95c9b0f7c9cb9851487b6c40f6a2639fcb18791b435a2c8ceb5d4ddcf45fed12
+  sha256: 5b470907ee2590234853dcd56c081afbc0348876a664747b9c3357d8f152b0c8
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - setuptools-scm >=6.2
     - pip
   run:
+    - diskcache >=5.6.3
     - pydantic >=2
     - python >=3.8
     - numpy

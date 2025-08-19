@@ -1,5 +1,5 @@
 {% set name = "ragas" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: a53c6a137c5eeb9ddf2b9ba0f86385a28172c1cb218aa225fe21c55d8ad2bf2d
+  sha256: a800a5326f0d5bfa086cf8832d4b1031e4b21ff063f83d7d9388ee36e1a93fe6
 
 build:
   noarch: python
@@ -21,8 +21,14 @@ requirements:
     - setuptools-scm >=6.2
     - pip
   run:
+    - gitpython
+    - instructor
+    - pillow >=10.4.0
+    - rich
+    - tqdm
+    - typer
     - diskcache >=5.6.3
-    - pydantic >=2
+    - pydantic >=2.0.0
     - python >={{ python_min }}
     - numpy
     - datasets
@@ -31,12 +37,13 @@ requirements:
     - langchain-core
     - langchain-community
     - langchain-openai
-    - openai >1
+    - openai >=1.0.0
     - pysbd >=0.3.4
     - nest-asyncio
     - appdirs
     - nltk
     - llama-index
+    - git
 
 test:
   imports:

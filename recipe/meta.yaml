@@ -43,6 +43,7 @@ requirements:
     - appdirs
     - nltk
     - llama-index
+    - git
 
 test:
   imports:

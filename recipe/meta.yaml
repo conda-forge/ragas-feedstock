@@ -1,5 +1,5 @@
 {% set name = "ragas" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ragas-{{ version }}.tar.gz
-  sha256: a800a5326f0d5bfa086cf8832d4b1031e4b21ff063f83d7d9388ee36e1a93fe6
+  sha256: b0915ee51fa5682f84996798857f2e11238f37df23d135134970a924e8d668a7
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - pydantic >=2.0.0
     - python >={{ python_min }}
     - numpy
-    - datasets
+    - datasets >=4.0.0
     - tiktoken
     - langchain
     - langchain-core

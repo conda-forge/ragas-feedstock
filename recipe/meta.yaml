@@ -21,7 +21,6 @@ requirements:
     - setuptools-scm >=6.2
     - pip
   run:
-    - langchain_openai
     - networkx
     - scikit-network
     - gitpython

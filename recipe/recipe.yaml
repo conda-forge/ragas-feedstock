@@ -55,7 +55,9 @@ tests:
       imports:
         - ragas
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Evaluation framework for your Retrieval Augmented Generation (RAG) pipelines
